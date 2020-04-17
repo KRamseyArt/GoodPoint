@@ -1,0 +1,109 @@
+@font-face{
+    font-family: Avenir;
+    src: url("./fonts/Avenir_95_Black.ttf");
+}
+@font-face{
+    font-family: "ASAP-Semi-Bold";
+    src: url("./fonts/FontsFree-Net-Asap-SemiBold.ttf")
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-family: "ASAP-Semi-Bold", Avenir;
+    color: rgb(239,76,54);
+}
+body {
+    background: rgb(120, 33, 27);
+    height: 100vh;
+}
+main {
+    background: rgb(239,76,54);
+    max-width: 1280px;
+    position: relative;
+    /* height: 100%; */
+}
+header {
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+}
+#brand-logo{
+    max-width: 40px;
+    margin-left: 10px;
+}
+#brand-name{
+    font-family: "ASAP-Semi-Bold";
+    font-size: 40px;
+    /* align-self: center; */
+    margin: 0px;
+}
+
+content {
+    display: flex;
+    padding-bottom: 75px;
+}
+
+nav {
+    flex: 1;
+    margin: 10px;
+}
+#calendar {
+    background: white;
+    border-radius: 10px;
+    height: 250px;
+    margin-bottom: 150px;
+}
+#menu {
+    height: 100%;
+    padding: 0;
+}
+#menu li{
+    list-style-type: none;
+}
+#menu li button {
+    font-family: Avenir;
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+}
+#menu li button:hover {
+    background: white;
+    color: rgb(239,76,54);
+    border-radius: 10px;
+}
+#issues {
+    font-size: 16px;
+    display: block;
+}
+
+
+#welcomePage {
+    flex: 3;
+    background: white;
+    margin: 10px;
+    border-radius: 15px;
+    width: 100%;
+    padding-top: 25%;
+}
+
+footer {
+    font-family: Avenir;
+    background: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    color: rgb(239,76,54);
+}
