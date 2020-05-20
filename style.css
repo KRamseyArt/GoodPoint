@@ -79,6 +79,7 @@ nav {
     margin: 10px auto;
 }
 #menu li button:hover {
+    cursor:pointer;
     background: white;
     color: rgb(239,76,54);
     border-radius: 10px;
@@ -93,9 +94,18 @@ nav {
     flex: 3;
     background: white;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
+}
+#sectionTitle {
+    background: rgb(120, 33, 27);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+#welcomeMessage {
     padding-top: 25%;
+
 }
 
 footer {
@@ -106,4 +116,90 @@ footer {
     bottom: 0;
     padding: 20px;
     color: rgb(239,76,54);
+}
+
+#eventList {
+    padding: 0;
+    margin: 10px;
+}
+
+.eventTag {
+    background: rgb(239,76,54);
+    border-radius: 10px;
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+}
+.eventDate {
+    font-family: Avenir;
+    align-self: center;
+    color:rgb(120, 33, 27);
+    margin: 5px;
+    width: 50px;
+}
+.divider {
+    height: 50px;
+    background: white;
+    width: 3px;
+    border-radius: 5px;
+    align-self: center;
+}
+.eventDetails {
+    flex: 4;
+    display: flex;
+    padding: 3px;
+}
+.eventInfo {
+    font-family: Avenir;
+    align-self: center;
+    color: white;
+}
+.eventName, .hostedBy, .checkIn {
+    text-align: left;
+}
+.eventImg{
+    align-self: center;
+}
+.eventImg img {
+    align-self: center;
+    border-radius: 10px;
+    padding: 3px;
+}
+.dropArrow {
+    margin: 5px;
+    align-self: center;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid white;
+    border-bottom: 20px solid transparent;
+}
+.activeArrow {
+    margin: 5px;
+    align-self: center;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid white;
+    border-bottom: 20px solid transparent;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.selectedEvent {
+    list-style-type: none;
+    background: rgb(231, 231, 231);
+    margin: -10px 30px;
+}
+.selectedEventHeader img{
+    width: 100%;
+    height: 100%;
+}
+.selectedEventVideo img{
+    width: 75%;
+}
+.selectedEventContent{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px 0;
+    width: 75%;
 }
